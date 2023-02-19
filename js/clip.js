@@ -24,7 +24,8 @@ class Clip {
     }
 
     setup(files) {
-        const path = '/Media/';
+        // const path = '../Media/';
+        const path = '/Guts-Daze/Media/'; // for gh-pages
         for (let i = 0; i < files.length; i++) {
             const filename = path + files[i];
             const sound = new Howl({
