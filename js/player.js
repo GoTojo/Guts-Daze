@@ -79,12 +79,20 @@ class Player {
         let next_clip = undefined;
         switch (cur_clip.clip) {
         case CLIP.GUTS1:
-            if (player.reserve_guts) cur_clip = player.clips[CLIP.BESO];
-            else next_clip = player.clips[CLIP.GUTS2];
+            if (player.reserve_guts) {
+                cur_clip = player.clips[CLIP.BESO];
+                next_clip = player.clips[CLIP.BRIDGE];
+            } else {
+                next_clip = player.clips[CLIP.GUTS2];
+            }
             break;
         case CLIP.GUTS2:
-            if (player.reserve_guts) cur_clip = player.clips[CLIP.BESO];
-            else next_clip = player.clips[CLIP.GUTS1];
+            if (player.reserve_guts) {
+                cur_clip = player.clips[CLIP.BESO];
+                next_clip = player.clips[CLIP.BRIDGE];
+            } else {
+                next_clip = player.clips[CLIP.GUTS1];
+            }
             break;
         case CLIP.BESO:
             next_clip = player.clips[CLIP.BRIDGE];
