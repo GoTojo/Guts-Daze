@@ -24,6 +24,7 @@
 </head>
 <body>
     <img class="title" src="./Media/title.png"./>
+    <p></p>
     <script src="./library/bootstrap-5_3_0/js/bootstrap.min.js"></script>
     <div class="container">
         <div class="row">
@@ -33,36 +34,39 @@
                     <a href="#" class="btn btn-dark btn-xs" id="pro">プロ</a>
                 </div>
             </div>
-            <div class="col-5 melody-guide">
+            <div class="col-4 melody-guide">
                 <button type="button" class="btn btn-dark btn-xs" id="melody">メロディ</button>
             </div>
-            <div class="col-3 manual">
-                <a href="./Manual/manual.html">マニュアル</a>
+            <div class="col-4 manual">
+                <a href="./Manual/manual.html" id="manual">マニュアル</a>
             </div>
         </div>
     </div>
+    <p></p>
     <div id="mainarea">
-        <div class="display">
-            <div class="guts-count" id="guts-count">0</div>
-            <img class="guts-img" src="./Media/guts.png" />
-        </div>
-    </div>
-    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-6 player">
-                    <button type="button" class="btn btn-secondary btn-xs" id="start">スタート</button>
-                    <button type="button" class="btn btn-secondary btn-xs" id="stop">ストップ</button>
-                    <button type="button" class="btn btn-secondary btn-xs" id="ending">エンディング</button>
+            <div class="row align-items-center">
+                <div class="col-4 center-block player">
+                    <table class="player-buttons">
+                       <tr> <td><button type="button" class="btn btn-secondary btn-xs" id="start">スタート</button></td></tr>
+                       <tr> <td><button type="button" class="btn btn-secondary btn-xs" id="stop">ストップ</button></td></tr>
+                       <tr> <td><button type="button" class="btn btn-secondary btn-xs" id="ending">エンディング</button></td></tr>
+                    </table>
                 </div>
-                <div class="col-4 center-block counter">
-                    <button type="button" class="btn btn-secondary btn-xs" id="guts">ガッツ</button>
-                    <button type="button" class="btn btn-secondary btn-xs" id="guts-reset">リセット</button>
+                <div class="display col-4">
+                    <div class="guts-count" id="guts-count">0</div>
+                    <img class="guts-img" src="./Media/guts.png" />
                 </div>
-                <div class="col-2 pull-right fx">
+                <div class="col-4 justify-content-end fx">
                     <button type="button" class="btn btn-secondary btn-xs" id="bubu">ブブー</button>
                 </div>
             </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="counter">
+            <button type="button" class="btn btn-secondary btn-xs" id="guts">ガッツ</button>
+            <button type="button" class="btn btn-secondary btn-xs" id="guts-reset">リセット</button>
         </div>
     </footer>
     <script>
