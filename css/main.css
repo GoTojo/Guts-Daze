@@ -1,0 +1,44 @@
+/* 
+    ガッツだぜ
+    main.css
+    Copyright (c) 2023 Yoshida, gotojo All Right Reserved.
+*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: black;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.guts-count {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.guts-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:15%;
+}
