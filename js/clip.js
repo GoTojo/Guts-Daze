@@ -24,7 +24,7 @@ class Clip {
     }
 
     setup(files) {
-        const path = '../Media/';
+        const path = '/Media/';
         for (let i = 0; i < files.length; i++) {
             const filename = path + files[i];
             const sound = new Howl({
