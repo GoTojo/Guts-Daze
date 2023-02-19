@@ -71,7 +71,7 @@ class Player {
         }
         player.cur_clip.stop();
         console.log(`next clip is ${player.next_clip.clip}`);
-        const cur_clip = player.next_clip;
+        let cur_clip = player.next_clip;
         if (!cur_clip) {
             player.stop();
             return;
