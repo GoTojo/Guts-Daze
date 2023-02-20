@@ -146,7 +146,7 @@ class Player {
             this.cur_melody = undefined;
             this.reserve_guts = false;
             this.cur_clip.start(this.onended);
-        } else {
+        } else if (this.cur_clip != this.clips[CLIP.ENDING]) {
             this.next_clip = this.clips[CLIP.ENDING];
         }
         this.playing = false;
