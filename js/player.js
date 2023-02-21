@@ -80,8 +80,7 @@ class Player {
         switch (cur_clip.clip) {
         case CLIP.GUTS1:
             if (player.reserve_guts) {
-                cur_clip = player.clips[CLIP.BESO];
-                next_clip = player.clips[CLIP.BRIDGE];
+                next_clip = player.clips[CLIP.BESO];
             } else {
                 next_clip = player.clips[CLIP.GUTS2];
             }
