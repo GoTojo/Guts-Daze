@@ -1,8 +1,9 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'pwa-caches';
 var urlsToCache = [
-    '/Guts-Daze/index.html',
-    '/index.html',
+    'Guts-Daze/index.html',
+    'index.html',
+    'index.html',
     // css
     '/Guts-Daze/css/main.css',
     // js
